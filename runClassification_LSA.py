@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 """
 Run k-NN classification on the Reuters text dataset using LSA.
 
@@ -37,6 +39,8 @@ X_train_raw = raw_text_dataset[0]
 y_train_labels = raw_text_dataset[1] 
 X_test_raw = raw_text_dataset[2]
 y_test_labels = raw_text_dataset[3]
+print(X_train_raw)
+print(y_train_labels)
 
 # The Reuters dataset consists of ~100 categories. However, we are going to
 # simplify this to a binary classification problem. The 'positive class' will
